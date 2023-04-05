@@ -16,8 +16,8 @@
   </head>
   <body>
     <div class="head">
-      <h1 class="h1Front">CALCULATOR</h1>
-      <h1 class="h1Back">CALCULATOR</h1>
+      <h1 class="h1Front">TEMPS</h1>
+      <h1 class="h1Back">TEMPS</h1>
     </div>
 
     <div class="calci">
@@ -41,13 +41,28 @@
           <input class="number" id="zero" type="button" value="0" />
         </div>
         <div class="operators">
+          <div class="filter">
+            <div>
+              <input type="radio" id="cel" name="filter" value="cel" />
+              <label for="cel">&deg;C -> &deg;F</label>
+            </div>
+            <div>
+              <input type="radio" id="far" name="filter" value="far" />
+              <label for="far">&deg;F -> &deg;C</label>
+            </div>
+            <div>
+              <input type="radio" id="kel" name="filter" value="kel" />
+              <label for="kel">&deg;C -> K</label>
+            </div>
+            <div>
+              <input type="radio" id="kc" name="filter" value="kc" />
+              <label for="kc">K -> &deg;C</label>
+            </div>
+          </div>
+
           <input class="sus" type="button" value="DEL" />
           <input class="sus" type="button" value="AC" />
-          <input class="ops" type="button" value="*" />
-          <input class="ops" type="button" value="/" />
-          <input class="ops" type="button" value="+" />
-          <input class="ops" type="button" value="-" />
-          <input class="sus" id="equal" type="button" value="=" />
+          <input class="sus" id="convert" type="button" value="Convert" />
         </div>
       </div>
     </div>
